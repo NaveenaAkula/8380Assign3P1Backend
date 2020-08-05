@@ -48,6 +48,7 @@ def getCustomer(request, pk):
     elif request.method == 'DELETE':
         customer.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+    
 
 
 @csrf_exempt
